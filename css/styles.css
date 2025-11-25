@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+/* make the svg look good */
+.bar-chart {
+	width: 75%;
+	height: auto;
+	margin: 50px auto;
+	display: block;
+}
+
+/* this makes the bar animate smooth */
+.bar {
+	fill: #00d4ff;
+	transition: all 0.5s;
+	height: 0;
+	rx: 5;
+	ry: 5;
+}
+
+/* when you click this happens */
+.bar-chart:active .bar {
+	height: 0;
+	y: 250px;
+}
+
+/* change cursor when you hover */
+.bar-chart:hover {
+	cursor: pointer;
+}
+
+/* make the text look nice */
+.bar-chart text {
+	font-family: "Orbitron", sans-serif;
+	fill: #333;
+	font-size: 32px;
+	font-weight: 900;
+}
+
